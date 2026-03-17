@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "plugins": {
+    "claude-mem@thedotmack": [
+      {
+        "scope": "user",
+        "installPath": "/Users/sachinghait/.claude/plugins/cache/thedotmack/claude-mem/10.0.6",
+        "version": "10.0.6",
+        "installedAt": "2026-02-13T11:50:39.398Z",
+        "lastUpdated": "2026-02-13T11:50:39.398Z",
+        "gitCommitSha": "f435ae32ce3da85dc16d1b5ffa9a0a269510a0fd"
+      }
+    ],
+    "frontend-design@claude-code-plugins": [
+      {
+        "scope": "local",
+        "projectPath": "/Users/sachinghait/MYDOCS/osbidian",
+        "installPath": "/Users/sachinghait/.claude/plugins/cache/claude-code-plugins/frontend-design/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-12T10:36:50.013Z",
+        "lastUpdated": "2026-03-12T10:36:50.013Z",
+        "gitCommitSha": "2dc1e697836e94f3e9b7b8f19e6fb4a3622e3cca"
+      }
+    ],
+    "superpowers@superpowers-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/sachinghait/.claude/plugins/cache/superpowers-marketplace/superpowers/5.0.2",
+        "version": "5.0.2",
+        "installedAt": "2026-03-13T07:41:10.234Z",
+        "lastUpdated": "2026-03-13T07:41:10.234Z",
+        "gitCommitSha": "363923f74aa9cd7b470c0aaa73dee629a8bfdc90"
+      }
+    ],
+    "context-mode@context-mode": [
+      {
+        "scope": "user",
+        "installPath": "/Users/sachinghait/.claude/plugins/cache/context-mode/context-mode/1.0.20",
+        "version": "1.0.20",
+        "installedAt": "2026-03-13T18:09:46.039Z",
+        "lastUpdated": "2026-03-17T02:39:17.608Z",
+        "gitCommitSha": "162d9851ea6cd0723a1515788770f0a23fbcbe2b"
+      }
+    ]
+  }
+}
