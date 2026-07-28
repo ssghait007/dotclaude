@@ -163,8 +163,6 @@ if [ -f "$usage_cache" ]; then
   five_reset=$(jq -r '.five_hour.resets_at // empty' "$usage_cache")
   week_pct=$(jq -r '.seven_day.utilization // 0' "$usage_cache" | cut -d. -f1)
   week_reset=$(jq -r '.seven_day.resets_at // empty' "$usage_cache")
-  sonnet_pct=$(jq -r '.seven_day_sonnet.utilization // 0' "$usage_cache" | cut -d. -f1)
-  sonnet_reset=$(jq -r '.seven_day_sonnet.resets_at // empty' "$usage_cache")
 
   # Progress bar helper: render_bar <pct> <width>
   render_bar() {
@@ -198,13 +196,10 @@ if [ -f "$usage_cache" ]; then
 
   five_bar=$(render_bar "$five_pct")
   week_bar=$(render_bar "$week_pct")
-  sonnet_bar=$(render_bar "$sonnet_pct")
   five_time=$(fmt_reset "$five_reset")
   week_time=$(fmt_reset "$week_reset")
-  sonnet_time=$(fmt_reset "$sonnet_reset")
 
   yellow='\033[33m'
   printf '%b\n' "${yellow}current  ${reset}${five_bar} ${five_pct}% ${dim}↻${reset} ${five_time}${stale_marker}"
   printf '%b\n' "${yellow}weekly   ${reset}${week_bar} ${week_pct}% ${dim}↻${reset} ${week_time}${stale_marker}"
-  printf '%b\n' "${yellow}weekly(s)${reset} ${sonnet_bar} ${sonnet_pct}% ${dim}↻${reset} ${sonnet_time}${stale_marker}"
 fi
